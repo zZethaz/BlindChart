@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BlindChart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo-container sidebar-logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">BlindChart</span>
+            </div>
+            <nav class="menu">
+                <a href="#" class="menu-item active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                <a href="#" class="menu-item"><i class="fa-solid fa-sliders"></i> Mis Estrategias</a>
+                <a href="#" class="menu-item"><i class="fa-solid fa-chart-line"></i> Análisis</a>
+                <a href="#" class="menu-item"><i class="fa-solid fa-book"></i> Historial de Cuentas</a>
+                <a href="#" class="menu-item"><i class="fa-solid fa-cog"></i> Configuración</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-icons">
+                    <i class="fa-regular fa-bell"></i>
+                    <div class="user-profile" id="user-menu-button">
+                        <span id="user-initials">--</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="welcome-header">
+                <div>
+                    <h1>Hola, <span id="username-display">Usuario</span>!</h1>
+                    <p id="current-date">Cargando fecha...</p>
+                </div>
+                <button class="btn btn-primary btn-icon"><i class="fa-solid fa-play"></i> Iniciar Nueva Simulación</button>
+            </div>
+            
+            <div class="summary-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-arrow-trend-up icon-green"></i> Rendimiento General</h3>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="performance-value">+0.0%</p>
+                        <span class="card-subtitle">Ganancia neta en las últimas 30 simulaciones</span>
+                        <div class="placeholder-graph">[Gráfico de rendimiento aquí]</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-dollar-sign icon-green"></i> Balance de Cuenta Virtual</h3>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="balance-value">$0.00</p>
+                        <span class="card-subtitle">Capital inicial $100,000</span>
+                        <div class="placeholder-graph">[Gráfico de balance aquí]</div>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="card-header">
+                        <h3><i class="fa-solid fa-list-check icon-green"></i> Progreso Semanal</h3>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 0%;"></div>
+                        </div>
+                        <span class="card-subtitle">0% de las metas alcanzadas</span>
+                        <span class="card-subtitle">Quedan 0 tareas por completar esta semana.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-config-card">
+                <h3><i class="fa-solid fa-bolt"></i> Configuración Rápida de Simulación</h3>
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

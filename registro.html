@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - BlindChart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="logo-container">
+                <span class="logo-icon"></span>
+                <span class="logo-text">BlindChart</span>
+            </div>
+            <h2>Crear Cuenta</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="new-username">Nombre de Usuario</label>
+                    <input type="text" id="new-username" name="new-username" placeholder="Elige un nombre de usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="new-password">Contraseña</label>
+                    <input type="password" id="new-password" name="new-password" placeholder="••••••••••" required>
+                </div>
+                 <div class="input-group">
+                    <label for="confirm-password">Confirmar Contraseña</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+            <div class="form-links">
+                <a href="login.html">¿Ya tienes una cuenta? <span class="link-highlight">Inicia sesión aquí</span></a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
