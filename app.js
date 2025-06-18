@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname;
 
     // Lógica para las páginas de autenticación
-    if (path.includes('login.html') || path.includes('registro.html')) {
-        const loginForm = document.getElementById('login-form');
+    if (path.includes('index.html') || path.includes('registro.html')) {
+        const indexForm = document.getElementById('index-form');
         const registerForm = document.getElementById('register-form');
 
-        if (loginForm) {
-            loginForm.addEventListener('submit', (e) => {
+        if (indexForm) {
+            indexForm.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const username = document.getElementById('username').value;
                 if (username) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Proteger la ruta: si no hay usuario, redirigir al login
         if (!loggedInUser) {
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
             return; // Detener la ejecución del script
         }
         
